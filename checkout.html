@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Checkout | BUNT 3D</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+
+        <div class="logo">
+            BUNT<span>3D</span>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="custom.html">Custom 3D</a>
+            <a href="about.html">About</a>
+        </nav>
+
+        <a href="cart.html" class="cart">
+            🛒 Cart <span id="cart-count">0</span>
+        </a>
+
+    </header>
+
+
+    <!-- Checkout -->
+    <main class="checkout-page">
+
+        <div class="checkout-title">
+            <p class="small-title">BUNT 3D STORE</p>
+
+            <h1>Checkout</h1>
+
+            <p>
+                Complete your order and get your 3D assets.
+            </p>
+        </div>
+
+
+        <div class="checkout-container">
+
+            <!-- Customer Information -->
+            <section class="checkout-form">
+
+                <h2>Customer Information</h2>
+
+                <form id="checkout-form">
+
+                    <div class="form-group">
+
+                        <label for="name">
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="Enter your name"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="example@email.com"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="phone">
+                            Phone
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            placeholder="08XXXXXXXX"
+                            required>
+
+                    </div>
+
+
+                    <h2 class="payment-title">
+                        Payment Method
+                    </h2>
+
+
+                    <label class="payment-option">
+
+                        <input
+                            type="radio"
+                            name="payment"
+                            value="promptpay"
+                            checked>
+
+                        <span>
+                            📱 PromptPay
+                        </span>
+
+                    </label>
+
+
+                    <label class="payment-option">
+
+                        <input
+                            type="radio"
+                            name="payment"
+                            value="bank">
+
+                        <span>
+                            🏦 Bank Transfer
+                        </span>
+
+                    </label>
+
+
+                    <label class="payment-option">
+
+                        <input
+                            type="radio"
+                            name="payment"
+                            value="card">
+
+                        <span>
+                            💳 Credit / Debit Card
+                        </span>
+
+                    </label>
+
+
+                    <button
+                        type="submit"
+                        class="place-order">
+
+                        Place Order
+
+                    </button>
+
+                </form>
+
+            </section>
+
+
+            <!-- Order Summary -->
+            <section class="checkout-summary">
+
+                <h2>Your Order</h2>
+
+                <div id="checkout-items">
+                </div>
+
+
+                <div class="checkout-total">
+
+                    <span>Total</span>
+
+                    <strong id="checkout-total">
+                        ฿0
+                    </strong>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="footer-logo">
+            BUNT<span>3D</span>
+        </div>
+
+        <p>
+            Premium 3D Models & Digital Assets
+        </p>
+
+        <p class="copyright">
+            © 2026 BUNT 3D. All rights reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

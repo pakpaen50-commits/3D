@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cart | BUNT 3D</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+
+        <div class="logo">
+            BUNT<span>3D</span>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="custom.html">Custom 3D</a>
+            <a href="about.html">About</a>
+        </nav>
+
+        <a href="cart.html" class="cart">
+            🛒 Cart <span id="cart-count">0</span>
+        </a>
+
+    </header>
+
+
+    <!-- Cart -->
+    <main class="cart-page">
+
+        <div class="cart-title">
+            <p class="small-title">BUNT 3D STORE</p>
+            <h1>Your Shopping Cart</h1>
+            <p>Review your selected 3D assets before checkout.</p>
+        </div>
+
+
+        <div class="cart-container">
+
+            <!-- รายการสินค้า -->
+            <div class="cart-items" id="cart-items">
+            </div>
+
+
+            <!-- สรุป -->
+            <div class="cart-summary">
+
+                <h2>Order Summary</h2>
+
+                <div class="summary-row">
+                    <span>Items</span>
+                    <span id="summary-items">0</span>
+                </div>
+
+                <div class="summary-row total">
+                    <span>Total</span>
+                    <strong id="cart-total">฿0</strong>
+                </div>
+
+                <a href="checkout.html"
+                   class="checkout-btn"
+                   id="checkout-button">
+
+                    Checkout
+
+                </a>
+
+                <a href="products.html"
+                   class="continue-shopping">
+
+                    ← Continue Shopping
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="footer-logo">
+            BUNT<span>3D</span>
+        </div>
+
+        <p>Premium 3D Models & Digital Assets</p>
+
+        <p class="copyright">
+            © 2026 BUNT 3D. All rights reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

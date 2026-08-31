@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gallery | BUNT 3D</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+
+        <div class="logo">
+            BUNT<span>3D</span>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="gallery.html" class="active">Gallery</a>
+            <a href="custom.html">Custom 3D</a>
+            <a href="about.html">About</a>
+        </nav>
+
+        <a href="cart.html" class="cart">
+            🛒 Cart <span id="cart-count">0</span>
+        </a>
+
+    </header>
+
+
+    <!-- Gallery -->
+    <main class="gallery-page">
+
+        <div class="gallery-header">
+
+            <p class="small-title">
+                BUNT 3D SHOWCASE
+            </p>
+
+            <h1>Our Gallery</h1>
+
+            <p>
+                Explore our collection of 3D models and digital artwork.
+            </p>
+
+        </div>
+
+
+        <!-- Filter -->
+        <div class="gallery-filters">
+
+            <button
+                class="gallery-filter active"
+                data-gallery="all">
+                All
+            </button>
+
+            <button
+                class="gallery-filter"
+                data-gallery="character">
+                Characters
+            </button>
+
+            <button
+                class="gallery-filter"
+                data-gallery="vehicle">
+                Vehicles
+            </button>
+
+            <button
+                class="gallery-filter"
+                data-gallery="environment">
+                Environment
+            </button>
+
+            <button
+                class="gallery-filter"
+                data-gallery="game">
+                Game Assets
+            </button>
+
+        </div>
+
+
+        <!-- Gallery Grid -->
+        <div class="gallery-grid">
+
+
+            <div
+                class="gallery-card"
+                data-gallery-category="character"
+                data-title="Cyber Robot">
+
+                <div class="gallery-image">
+                    🤖
+                </div>
+
+                <div class="gallery-info">
+
+                    <span>CHARACTER</span>
+
+                    <h3>Cyber Robot</h3>
+
+                </div>
+
+            </div>
+
+
+            <div
+                class="gallery-card"
+                data-gallery-category="vehicle"
+                data-title="Sport Car">
+
+                <div class="gallery-image">
+                    🚗
+                </div>
+
+                <div class="gallery-info">
+
+                    <span>VEHICLE</span>
+
+                    <h3>Sport Car</h3>
+
+                </div>
+
+            </div>
+
+
+            <div
+                class="gallery-card"
+                data-gallery-category="environment"
+                data-title="Fantasy Castle">
+
+                <div class="gallery-image">
+                    🏰
+                </div>
+
+                <div class="gallery-info">
+
+                    <span>ENVIRONMENT</span>
+
+                    <h3>Fantasy Castle</h3>
+
+                </div>
+
+            </div>
+
+
+            <div
+                class="gallery-card"
+                data-gallery-category="game"
+                data-title="Game Controller">
+
+                <div class="gallery-image">
+                    🎮
+                </div>
+
+                <div class="gallery-info">
+
+                    <span>GAME ASSET</span>
+
+                    <h3>Game Controller</h3>
+
+                </div>
+
+            </div>
+
+
+            <div
+                class="gallery-card"
+                data-gallery-category="character"
+                data-title="Fantasy Wizard">
+
+                <div class="gallery-image">
+                    🧙
+                </div>
+
+                <div class="gallery-info">
+
+                    <span>CHARACTER</span>
+
+                    <h3>Fantasy Wizard</h3>
+
+                </div>
+
+            </div>
+
+
+            <div
+                class="gallery-card"
+                data-gallery-category="environment"
+                data-title="Forest Pack">
+
+                <div class="gallery-image">
+                    🌲
+                </div>
+
+                <div class="gallery-info">
+
+                    <span>ENVIRONMENT</span>
+
+                    <h3>Forest Pack</h3>
+
+                </div>
+
+            </div>
+
+
+            <div
+                class="gallery-card"
+                data-gallery-category="vehicle"
+                data-title="Sci-Fi Bike">
+
+                <div class="gallery-image">
+                    🏍️
+                </div>
+
+                <div class="gallery-info">
+
+                    <span>VEHICLE</span>
+
+                    <h3>Sci-Fi Bike</h3>
+
+                </div>
+
+            </div>
+
+
+            <div
+                class="gallery-card"
+                data-gallery-category="game"
+                data-title="Game Prop">
+
+                <div class="gallery-image">
+                    ⚔️
+                </div>
+
+                <div class="gallery-info">
+
+                    <span>GAME ASSET</span>
+
+                    <h3>Game Prop</h3>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- Image Modal -->
+    <div
+        class="gallery-modal"
+        id="gallery-modal">
+
+        <div class="modal-content">
+
+            <button
+                class="modal-close"
+                id="modal-close">
+                ×
+            </button>
+
+            <div
+                class="modal-image"
+                id="modal-image">
+            </div>
+
+            <h2 id="modal-title">
+                Model
+            </h2>
+
+            <p>
+                BUNT 3D Collection
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="footer-logo">
+            BUNT<span>3D</span>
+        </div>
+
+        <p>
+            Premium 3D Models & Digital Assets
+        </p>
+
+        <p class="copyright">
+            © 2026 BUNT 3D. All rights reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
